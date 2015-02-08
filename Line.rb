@@ -9,3 +9,10 @@
 #Create a Line class
 
 #Create a Point class
+class Point
+  attr_accessor :x, :y
+  def initialize(args)
+    @x = args[:x]
+    @y = args[:y]
+  end
+end
