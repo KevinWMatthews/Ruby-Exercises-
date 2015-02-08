@@ -1,12 +1,11 @@
 =begin
-  Create a Line class.
-  User will initialize with two Points
-  Class will calculate the slope and intercept of this line.
-  First insiste that the line remain static after initialization.
-  Then allow the Line's Points to be edited after initialization.
+  Define a Line class and a Point class.
+  Calculate the slope and intercept of
+  the line defined by the given points.
+
+  slope method returns false if the line is vertical
 =end
 
-#Create a Line class
 class Line
   attr_accessor :point1, :point2
   def initialize(args)
@@ -16,6 +15,7 @@ class Line
 
   def slope
     if (point2.x == point1.x)
+      #Vertical line; slope is undefined.
       return false
     end
     @slope = (point2.y-point1.y).to_f / (point2.x-point1.x)
@@ -27,7 +27,6 @@ class Line
   end
 end
 
-#Create a Point class
 class Point
   attr_accessor :x, :y
   def initialize(args)
