@@ -20,6 +20,11 @@ class Line
     end
     @slope = (point2.y-point1.y).to_f / (point2.x-point1.x)
   end
+
+  def intercept
+    #Can use either point
+    @intercept = point2.y - slope * point2.x
+  end
 end
 
 #Create a Point class

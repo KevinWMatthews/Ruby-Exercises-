@@ -51,3 +51,11 @@ puts Line.new(
   :point1 => Point.new(:x => 1, :y => 1),
   :point2 => Point.new(:x => 1, :y => 7) ).slope
 puts
+
+puts "Line.intercept:"
+puts l1.intercept
+puts "Horizontal line:"
+puts Line.new(
+  :point1 => Point.new(:x => 1, :y => 1),
+  :point2 => Point.new(:x => 7, :y => 1) ).intercept
+puts
