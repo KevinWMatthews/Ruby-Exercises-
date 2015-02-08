@@ -13,6 +13,13 @@ class Line
     @point1 = args[:point1]
     @point2 = args[:point2]
   end
+
+  def slope
+    if (point2.x == point1.x)
+      return false
+    end
+    @slope = (point2.y-point1.y).to_f / (point2.x-point1.x)
+  end
 end
 
 #Create a Point class

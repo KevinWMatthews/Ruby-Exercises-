@@ -1,0 +1,2 @@
+#Ignore OpenOffice's lock on .odf files
+.~lock.*.odf#

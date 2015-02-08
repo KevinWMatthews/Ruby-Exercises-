@@ -37,3 +37,17 @@ puts l1.point1.x
 puts l1.point1.y
 puts l1.point2.x
 puts l1.point2.y
+puts
+
+puts "Line.slope"
+puts l1.slope
+puts "Horizontal line (slope of 0.0):"
+puts Line.new(
+  :point1 => Point.new(:x => 1, :y => 1),
+  :point2 => Point.new(:x => 7, :y => 1) ).slope
+
+puts "Vertical line (undefined slope):"
+puts Line.new(
+  :point1 => Point.new(:x => 1, :y => 1),
+  :point2 => Point.new(:x => 1, :y => 7) ).slope
+puts
