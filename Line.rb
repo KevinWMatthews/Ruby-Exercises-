@@ -7,6 +7,13 @@
 =end
 
 #Create a Line class
+class Line
+  attr_accessor :point1, :point2
+  def initialize(args)
+    @point1 = args[:point1]
+    @point2 = args[:point2]
+  end
+end
 
 #Create a Point class
 class Point
